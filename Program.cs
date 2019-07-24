@@ -10,40 +10,40 @@ namespace Ch7Homework
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter choices (E)asy, (M)edium, or (H)ard");
+            Console.WriteLine("Enter choices (E)asy, (M)edium, or (H)ard"); #writes message out to the console
 
-            MathQuiz n = new MathQuiz();
-            string choice = Console.ReadLine();
+            MathQuiz n = new MathQuiz(); #initializes an instance from the MathQuiz class
+            string choice = Console.ReadLine(); #used to see what choice the user will select 
 
-            if (choice == "E")
+            if (choice == "E") #if the choice is E or Easy 
             {
                 int counter = 1;
-                while (counter <= 10)
+                while (counter <= 10) #while loop asks 10 questions 
                 {
-                    n.AskQuestion(Difficulty.Easy);
+                    n.AskQuestion(Difficulty.Easy); #calls the AskQuestion Method and uses the difficulty enum class as a parameter
                     counter++;
                 }
-                n.ShowScore();
+                n.ShowScore(); #shows the user score after the 10 questions are asked 
             }
-            if (choice == "M")
+            if (choice == "M") #if the choice is E or Easy 
             {
                 int counter = 1;
-                while (counter <= 10)
+                while (counter <= 10) #while loop asks 10 questions 
                 {
-                    n.AskQuestion(Difficulty.Medium);
+                    n.AskQuestion(Difficulty.Medium);#calls the AskQuestion Method and uses the difficulty enum class as a parameter
                     counter++;
                 }
-                n.ShowScore();
+                n.ShowScore(); #shows the user score after the 10 questions are asked 
             }
             if (choice == "H")
             {
                 int counter = 1;
-                while (counter <= 10)
+                while (counter <= 10)#while loop asks 10 questions 
                 {
-                    n.AskQuestion(Difficulty.Hard);
+                    n.AskQuestion(Difficulty.Hard); #calls the AskQuestion Method and uses the difficulty enum class as a parameter
                     counter++;
                 }
-                n.ShowScore();
+                n.ShowScore(); #shows the user score after the 10 questions are asked 
             }
             Console.WriteLine("PAK");
             Console.ReadKey();
